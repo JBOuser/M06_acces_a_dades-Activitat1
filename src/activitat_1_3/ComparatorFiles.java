@@ -10,21 +10,21 @@ public class ComparatorFiles
 
     Scanner scanner1 = new Scanner(System.in);
 
-//    System.out.println("Enter the path of folder 1: ");
-//    String path1 = scanner1.next();
-//    System.out.println("Enter the path of folder 2: ");
-//    String path2 = scanner1.next();
-//    scanner1.close();
-    
-    String path1 = "/media/jbdragon/KINGSTON/EscolaDelTreball/2n/M06_acces_a_dades/target_dir_1";
-    String path2 = "/media/jbdragon/KINGSTON/EscolaDelTreball/2n/M06_acces_a_dades/target_dir_2";
-    
+   System.out.println("Enter the path of folder 1: ");
+   String path1 = scanner1.next();
+   System.out.println("Enter the path of folder 2: ");
+   String path2 = scanner1.next();
+   scanner1.close();
+
+    //String path1 = "/media/jbdragon/KINGSTON/EscolaDelTreball/2n/M06_acces_a_dades/target_dir_1";
+    //String path2 = "/media/jbdragon/KINGSTON/EscolaDelTreball/2n/M06_acces_a_dades/target_dir_2";
+
     File pathFolder1 = new File(path1);
     File pathFolder2 = new File(path2);
-   
+
     checkIfEnteredFilesExist(pathFolder1, pathFolder2);
 
-  } 
+  }
 
   //check which files from path1 exists in path2 too
   public static void checkIfEnteredFilesExist(File pathFolder1, File pathFolder2)
@@ -35,7 +35,7 @@ public class ComparatorFiles
 	    	{
 	        	String f2_path = pathFolder2.toString()+"/"+f1.getName();
 	    		File f2 = new File(f2_path);
-	    		
+
 	    		if (f2.exists())
 	    		{
 	    			System.out.println(f1.getName()+" and "+f2.getName()+" exist in both directories");
@@ -56,8 +56,8 @@ public class ComparatorFiles
 	    	notExistingFilesOutput(pathFolder1, pathFolder2);
 	    }
   }
-  
-  
+
+
   //show if one or both of entered files do not exist
   public static void notExistingFilesOutput(File pathFolder1, File pathFolder2)
   {
@@ -67,16 +67,16 @@ public class ComparatorFiles
   	}
   	else if(!pathFolder1.exists())
   	{
-  		System.out.println("Folder "+pathFolder1+" does not exists");    		
+  		System.out.println("Folder "+pathFolder1+" does not exists");
   	}
   	else
   	{
-  		System.out.println("Folder "+pathFolder2+" does not exists");    		    		
+  		System.out.println("Folder "+pathFolder2+" does not exists");
   	}
   }
-  
-  
-  //compare the size of 2 Files 
+
+
+  //compare the size of 2 Files
   public static void compareSizeBetween2Files(File f1, File f2)
   {
 	  if(f1.canRead() && f2.canRead())
@@ -91,15 +91,13 @@ public class ComparatorFiles
 		  }
 		  else
 		  {
-			  System.out.println(f1.getName()+" and " +f2.getName()+" have the same size");		  
-		  }		  
+			  System.out.println(f1.getName()+" and " +f2.getName()+" have the same size");
+		  }
 	  }
 	  else
 	  {
 		  System.out.println("At least one of the file has not read permissions");
 	  }
   }
-  
+
 }
-
-
