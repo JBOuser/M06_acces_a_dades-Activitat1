@@ -1,0 +1,25 @@
+Activitat 1.2. Esborrat de fitxers
+
+Important:
+
+    Ves en compte, no esborris res que sigui important fent aquest exercici! Crea un directori de prova específic amb 3 o 4 fitxers per fer-hi proves.
+    Recorda aplicar tot el que vas veure el curs passat. En especial, ha de ser modular. No és acceptable repetir codi dues vegades per fer la mateixa tasca (per exemple, no seria acceptable generar un codi per esborrar un directori i copiar-lo per esborrar un fitxer).
+
+Crea un programa que esborri el directori que es passi com a argument i tot el contingut del mateix. Només tindràs en compte que al directori hi ha, com a màxim, un nivell d'arxius (sense subdirectoris).
+
+Situació:
+-- DIRTEST
+    -- file01.txt
+    -- file02.txt
+
+Resultat Situació:
+
+S'ha esborrat el fitxer file01.txt
+
+S'ha esborrat el fitxer file02.txt
+
+S'ha esborrat el fitxer DIRTEST
+
+Si algun fitxer o el directori pare no s'ha pogut esborrar per algun motiu, haurà d'imprimir "No s'ha pogut esborrar" i a continuació el nom del fitxer o directori.
+
+Ampliació: que quan s'esborri un directori, el text digui "S'ha esborrat el directori " i el nom del directori.

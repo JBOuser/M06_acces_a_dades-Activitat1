@@ -1,0 +1,46 @@
+***Activitat telemàtica 1.3. Comparador de fitxers (avaluable)
+
+Pugeu el codi de l'activitat al vostre GIT i pengeu aquí l'enllaç
+
+Implementeu una utilitat que permeti comparar els fitxers de dos directoris diferents. Només has de fer la comparació amb els fitxers: no es tindran en compte durant la comparació els possibles subdirectoris continguts en algun dels comparats.
+
+Segueix aquestes instruccions:
+
+    Parametritzeu primer i el segon directori a comparar (per exemple, en una variable)
+    Per a cada fitxer del primer directori realitzeu la comparació amb el segon directori,  informant a l’usuari del nom del fitxer i del resultat, amb els possibles casos següents:
+        Existeix en el directori A, però no en el B
+        Existeix en ambdós directoris:
+            I són exactament iguals en mida i data (de modificació)
+            I hi ha diferències (no són exclusives, en poden ser més d'una):
+                El fitxer al directori A és més nou (segons la data de modificació) que a B
+                El fitxer al directori B és més nou que a A
+                El fitxer al directori A és més gran que a B
+                El fitxer al directori B és més gran que a A
+
+Aquest podria ser un exemple del resultat de l’execució:
+
+- S’està comparant els següents dos directoris
+
+---- Directori A: C:\DirectoriA
+
+---- Directori B: C:\DirectoriB
+
+- El fitxer “pepito.txt” existeix al directori A, però no existeix al directori B
+
+- El fitxer “totsdos.txt” existeix a ambdós directoris
+
+---- Tenen la mateixa data
+
+---- Al directori A és més gran que al directori B
+
+- El fitxer “tots2.txt” existeix a ambdós directoris
+
+---- Tenen la mateixa data
+
+---- Tenen la mateixa mida
+
+- El fitxer “tots2-3.txt” existeix a ambdós directoris
+
+---- Al directori B és més gran que al directori A
+
+---- Tenen la mateixa mida

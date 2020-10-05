@@ -1,0 +1,5 @@
+Partint de la documentació oficial de Java, revisa tota la llista dels mètodes de la classe File i la seva utilitat:
+
+https://docs.oracle.com/javase/7/docs/api/java/io/File.html
+
+Escull-ne tres i fes un petit programa on s'utilitzin de forma justificada i útil aquests mètodes (pots fer un programa diferent per cada mètode o, si ho prefereixes, un de sol que utilitzi tots tres).
